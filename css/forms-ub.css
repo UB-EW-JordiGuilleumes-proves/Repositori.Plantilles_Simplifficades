@@ -1,0 +1,302 @@
+form legend {
+	color: #333333;
+	padding-left: 0;
+	font-weight: bold;
+}
+form fieldset fieldset legend {
+	display: inherit;
+	font-weight: normal;
+	padding: 0 0 5px;
+}
+form label {
+	width: 100px;
+	display: inline-block;
+	line-height: 1.8em;
+	vertical-align: top;
+}
+form fieldset fieldset label {
+	margin-left: 103px;
+	display: block;
+	width: auto;
+}
+input {
+	border: 1px solid black;
+}
+input, textarea, select {
+	/*font-family: inherit;*/
+	font-size: 100%;
+	margin: 0;
+	padding: 1px;
+}
+.form1 .checkbox {
+	width: 2em;
+}
+.form1 .radiobutton, 
+.form1 .radiobutton2 {
+	width: 2em;
+}
+.form1 .number {
+	width: 8em;
+	text-align: right;
+}
+input.submit{
+	margin-left: 103px;
+}
+form label.checkbox {
+	width: 50px;
+	display: inline-block;
+	line-height: 1.8em;
+	vertical-align: top;
+}
+form label.radiobutton {
+	width: 50px;
+	display: inline-block;
+	line-height: 1.8em;
+	vertical-align: top;
+}
+.form1 .gray {
+	color: gray;
+	background:#FAFAFA;
+	border: 1px dotted gray;
+}
+input.error {
+    background-color: #FFFFE0;
+	border: 1px dotted  red;
+}
+.error {
+    background-color: #FFFFE0;
+	display: inline;
+	margin-left: 10px;
+	width: auto;
+}
+label.error {
+    background-color: #FFFFE0;
+	display: inline;
+	margin-left: 10px;
+	width: auto;
+}
+.radiobutton legend {
+	display: block;
+	font-weight: normal;
+	float: left;
+	width: 10.5em;
+	line-height: 1.2em;
+	margin-left: 2em;
+	margin-right: 2em;
+	padding-top: 0.2em;
+	text-align: right;
+}
+.radiobutton label.radio {
+    margin-left: 180px;
+    margin-top: -2.4em;
+}
+.radiobutton label.radio label.error {
+    margin-left: -200px;
+    margin-top: 2em;
+	width: auto;
+}
+
+.petit {
+	width: 40px !important;
+}
+.mitja {
+	width: 60px !important;
+}
+/*
+label.error {
+    background-color: #FFFFE0;
+    clear: both;
+    color: #FF0000;
+    display: block;
+    float: left;
+    font-size: 90%;
+    font-style: italic;
+    margin-left: 50px;
+    position: absolute;
+    text-align: center;
+    width: 300px;
+}
+input label.error {
+    background-color: #FFFFE0;
+    clear: both;
+    color: #FF0000;
+    display: block;
+    float: left;
+    font-size: 90%;
+    font-style: italic;
+    margin-left: 50px;
+    position: absolute;
+    text-align: center;
+    width: 300px;
+}
+select label.error {
+    background-color: #FFFFE0;
+    clear: both;
+    color: #FF0000;
+    display: block;
+    float: left;
+    font-size: 90%;
+    font-style: italic;
+    margin-left: 50px;
+    position: absolute;
+    text-align: center;
+    width: 300px;
+}
+.error {
+	background-color: #FFFFE0;
+	color: #FF0000;
+	font-size: 1em;
+	font-style: italic;
+	padding-left: 4px;
+	display: inline;
+}
+#confirmacio{
+	display:none;
+	height:30px;
+	background-color:#060;
+	color:#FFF;
+	padding:3px;
+}
+.obligatori{
+	background-color:rgb(255, 255, 224);
+	color:#FF0000;
+	padding-left:4px;
+	font-weight:bold;
+}
+*/
+.form1 td input {
+	width: 15em;
+}
+.form1 td {
+	text-align: left;
+}
+.form1 td.label {
+	width: auto;
+	text-align: center;
+}
+label.etiqueta_obligatori {
+	background: url(../css_img/ub_2012/icons/asterisc-vermell-10.png) no-repeat right 0.5em;
+	margin-right: 10px;
+	padding-right: 14px;
+}
+label.etiqueta_nota,
+p.etiqueta_nota {
+	background: url(../css_img/ub_2012/icons/double-dagger-red-14.png) no-repeat right 0.3em;
+	margin-right: 12px;
+	padding-right: 10px;
+	height: 28px;
+}
+.amagar{
+	display:none;
+}
+
+input[type:file]{
+
+}
+/*estil incorporat 03-05-2011 -- menu per a ajax*/
+/*Lista horizontal separación rayas*/
+.paginador li{ float:left; }
+.paginador .last  { background:none;}
+.paginador:after {
+	height: 0;
+	content: ".";
+	visibility: hidden;
+	display: block;
+	clear: both;
+}
+.paginador a.selected {
+	color:#0059A2; 
+	font-weight:bold; 
+	border-bottom-color:#0059A2; 
+	color:#333!important
+}
+
+/*Estils formulari */
+label.etiqueta_obligatori,
+p.etiqueta_obligatori {
+    background: url("../css_img/icons/asterisc-vermell-10.png") no-repeat scroll right 0.5em transparent;
+    margin-right: 10px;
+    padding-right: 14px;
+}
+.coeficient {
+	float: right;
+	text-align: right;
+	width: 790px;
+	font-size: 120%;
+	font-weight: bold;
+}
+.coeficient input {
+	padding-top: -10px;
+}
+
+#taxa_exit input {
+    width: 10em !important;
+}
+.form1 .radiobutton, .form1 .radiobutton2 {
+	width: 2em;
+}
+label.etiqueta_nota, p.etiqueta_nota {
+	background: url("../css_img/icons/double-dagger-red-14.png") no-repeat scroll right 0.3em transparent;
+	height: 28px;
+	margin-right: 12px;
+	padding-right: 10px;
+}
+#imprimir {
+	border:#ccc 2px dotted;
+	padding:5px;
+	margin-bottom:10px;
+	font-size:12px;
+	display: block;
+}
+
+#imprimir input[type="text"]{
+	margin-right:10px;
+}
+#loading{
+	display:none;
+}
+
+#loading img{
+	margin-left:300px;
+}
+
+#results,
+#dnitrobat {
+	font-size:16px; 
+	font-weight:bold;
+	border:2px solid #3b841e;
+	padding:5px;
+	margin-bottom:10px;
+	font-weight: bold;
+	background: #b3d2a7;
+	text-align: center;
+	margin-bottom:100px;
+	display:none;
+}
+#formulari{
+	display: none;
+}
+
+#valors_finals{
+	padding:4px;
+	background-color:#eee;
+	width:800px;
+	margin:auto;
+	margin-bottom:10px;
+	height:30px;
+	border:1px dotted #ccc;
+}
+
+#valors_finals .coeficient{
+	width:340px;
+	float:none;
+	margin:auto;
+}
+
+#exit{
+	float:left;
+	width:150px;
+}
+#dnitrobat {
+	display: block;
+}

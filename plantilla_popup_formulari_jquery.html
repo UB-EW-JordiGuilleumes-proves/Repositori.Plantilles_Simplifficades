@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ca" lang="ca">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>Popup amb formulari</title>
+	
+	<link href="css/styles-ub.css" rel="stylesheet" type="text/css" />
+	<link href="css/forms-ub.css" rel="stylesheet" type="text/css" />
+	
+	<script type="text/javascript" src="js/jquery.validate.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#formulari").validate();
+		});
+	</script>
+	
+</head>
+<body>
+
+	<!-- Inici 'popup' =========== -->
+	<div id="popup">
+	
+		<!-- <form action="">
+			<fieldset>
+				<h3>Enviar la noticia per correu electr&ograve;nic a:</h3>
+				<dl class="form-vert">
+					<dt><label for="destination">Destinatari (<em>adre&ccedil;a de correu electr&ograve;nic</em>):</label></dt>
+						<dd><textarea id="destination" name="textarea" cols="46" rows="2"></textarea></dd>
+					<dt><label for="sender">Remitent (<em>adre&ccedil;a de correu electr&ograve;nic</em>):</label></dt>
+						<dd><input id="sender" type="text" /></dd>
+					<dt><label for="comment">Nota (opcional):</label></dt>
+						<dd><textarea id="comment" name="textarea" cols="46" rows="2"></textarea></dd>
+				</dl>
+			</fieldset>
+			<div class="submit">
+				<input type="submit" name="input" value="Envia-ho" class="defaultaction" />
+			</div>
+		</form>-->
+		
+		<!-- Inici Fomulari -------------->
+		<form class="form1" id="formulari_popup" action="">
+			<h2>Pas 1 de 2</h2>
+			<p class="note"><strong>*</strong> Camps obligatoris</p>
+			<!-- Start section 1 -->
+			<div class="fieldgroup">
+				<h3>T&iacute;tol de secci&oacute;</h3>
+				<fieldset id="grup1">
+					<legend>Secci&oacute;</legend>
+					<ol>
+						<li>
+							<label for="camp1">Nom <strong>*</strong></label>
+							<input name="text" type="text" id="camp1" class="required" />Lorem ipsum
+						</li>
+						<li>
+							<label for="camp2">Adre&ccedil;a de correu electr&ograve;nic <strong>*</strong></label>
+							<input name="text" type="text" id="camp2" class="required email" />
+						</li>
+						<li>
+							<label for="camp2">Nom del camp2</label>
+							<select name="select" id="camp2">
+								<option value="#" selected="selected">Selecci&oacute;n 1</option>
+								<option value="#">Selecci&oacute;n 2</option>
+							</select>
+						</li>
+						<li>
+							<label for="camp3">Nom del camp3</label>
+							<select name="name" size="4" multiple="multiple" id="camp3">
+								<option value="#">Selecci&oacute;n 1</option>
+								<option value="#">Selecci&oacute;n 2</option>
+								<option value="#">Selecci&oacute;n 3</option>
+								<option value="#">Selecci&oacute;n 4</option>
+								<option value="#">Selecci&oacute;n 5</option>
+								<option value="#">Selecci&oacute;n 6</option>
+							</select>
+						</li>
+					</ol>
+				</fieldset>
+			</div>
+			<!-- End section 1 -->
+			<!-- Start section 2 -->
+			<div class="fieldgroup">
+				<h3>T&iacute;tol de secci&oacute;</h3>
+				<fieldset id="grup2">
+					<legend>Secci&oacute;</legend>
+					<ol>
+					<li>
+						<label>Nom del camp</label>
+						<label for="radi1" class="radio">
+							<input type="radio" id="radi1" name="radiogroup1" />Opci&oacute; 1</label>
+						<label for="radi2" class="radio">
+							<input type="radio" id="radi2" name="radiogroup1" />Opci&oacute; 2</label>
+					</li>
+					<li>
+						<label for="camp4">Nom del camp liquid lorem ipsum dolors set</label>
+						<div class="textarea">
+							<textarea name="textarea" cols="42" rows="10" id="camp4"></textarea>
+						</div>
+					</li>
+					<li>
+						<label class="hidden">Nom del camp</label>
+						<div class="check-3col">
+							<label for="camp6" class="check">
+								<input name="checkbox" type="checkbox" id="camp6" />Lorem ipsum</label>
+							<label for="camp7" class="check">
+								<input name="checkbox" type="checkbox" id="camp7" />Lorem ipsum</label>
+							<label for="camp8" class="check">
+								<input name="checkbox" type="checkbox" id="camp8" />Lorem ipsum</label>
+							<label for="camp9" class="check">
+								<input name="checkbox" type="checkbox" id="camp9" />Lorem ipsum</label>
+							<label for="camp10" class="check">
+								<input name="checkbox" type="checkbox" id="camp10" />Lorem ipsum</label>
+							<label for="camp11" class="check">
+								<input name="checkbox" type="checkbox" id="camp11" />Lorem ipsum</label>
+						</div>
+					</li>
+					</ol>
+				</fieldset>
+			</div>
+			<!-- End section 2 -->
+			<!-- Send buttons -->
+				<div class="button">
+					<input name="reset" type="reset" value="Reinicia'l" />
+					<!-- The Continuar button should be active -->
+					<input name="submit" type="submit" class="defaultaction" value="Continua" />
+				</div>
+			<!-- /Send buttons -->
+		</form>
+		<!-- Final Fomulari -------------->
+		
+	</div>
+	<!-- Final 'popup'----------------- -->
+	
+</body>
+</html>
