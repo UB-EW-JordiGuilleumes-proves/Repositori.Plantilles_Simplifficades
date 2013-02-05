@@ -4,18 +4,18 @@ Prova de repositori Entorns Web
 
 ## Plantilles bàsiques
 Disposem de 3 tipus de plantilles bàsiques 
-* Una columna:
+* <b>Una columna</b>:
 	* Cos de la pàgina.
-* Dues columnes:
+* <b>Dues columnes</b>:
 	* Cos de la pàgina
 	* Columna menú esquerra
-* Tres columnes
+* <b>Tres columnes</b>
 	* Cos de la pàgina
 	* Columna menú esquerra
 	* Columna dreta
 
 ------------------------------
-// https://raw.github.com/travishorn/jquery-headerPersist/master/README.md //
+<!--- https://raw.github.com/travishorn/jquery-headerPersist/master/README.md --->
 ## Description
 Locks a header to the top of the page only when user is scrolling within it's parent container.
 
@@ -39,7 +39,7 @@ Open example.html for example usage.
 * [Screenshots](https://sites.google.com/site/tpopsjqueryplugins/headerpersist/screenshots)
 
 ------------------------------
-/* https://raw.github.com/dvbscript/dynamictitle/master/README.md */
+<!--- https://raw.github.com/dvbscript/dynamictitle/master/README.md -->
 ## Mostra de cita html
 In some CMS, for example, Drupal 7, you need to wrap your code in the jQuery.noConflict() function:
 ```html
