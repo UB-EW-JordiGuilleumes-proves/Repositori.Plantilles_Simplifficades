@@ -9,7 +9,7 @@
 		transition: "elastic",
 		speed: 300,
 		width: false,
-		initialWidth: "600",
+		initialWidth: "800",
 		innerWidth: false,
 		maxWidth: false,
 		height: false,
@@ -114,8 +114,8 @@
 	function $div(id, cssText) { 
 		var div = document.createElement('div');
 		if (id) {
-            div.id = prefix + id;
-        }
+			div.id = prefix + id;
+	   }
 		div.style.cssText = cssText || false;
 		return $(div);
 	}
@@ -346,11 +346,11 @@
 		$('body').prepend($overlay, $box.append($wrap, $loadingBay));
 		
 		$content.children()
-		.hover(function () {
-			$(this).addClass('hover');
-		}, function () {
-			$(this).removeClass('hover');
-		}).addClass('hover');
+			.hover(function () {
+				$(this).addClass('hover');
+			}, function () {
+				$(this).removeClass('hover');
+			}).addClass('hover');
 		
 		// Cache values needed for size calculations
 		interfaceHeight = $topBorder.height() + $bottomBorder.height() + $content.outerHeight(true) - $content.height();//Subtraction needed for IE6
@@ -361,16 +361,16 @@
 		// Setting padding to remove the need to do size conversions during the animation step.
 		$box.css({"padding-bottom": interfaceHeight, "padding-right": interfaceWidth}).hide();
 		
-                // Setup button events.
-                $next.click(function () {
-                        publicMethod.next();
-                });
-                $prev.click(function () {
-                        publicMethod.prev();
-                });
-                $close.click(function () {
-                        publicMethod.close();
-                });
+		// Setup button events.
+		$next.click(function () {
+			publicMethod.next();
+		});
+		$prev.click(function () {
+			publicMethod.prev();
+		});
+		$close.click(function () {
+			publicMethod.close();
+		});
 		
 		$groupControls = $next.add($prev).add($current).add($slideshow);
 		
@@ -394,7 +394,7 @@
 		
 		// Set Navigation Key Bindings
 		$(document).bind('keydown.' + prefix, function (e) {
-                        var key = e.keyCode;
+         var key = e.keyCode;
 			if (open && settings.escKey && key === 27) {
 				e.preventDefault();
 				publicMethod.close();
@@ -510,17 +510,17 @@
 		}
 		
 		$loaded.hide()
-		.appendTo($loadingBay.show())// content has to be appended to the DOM for accurate size calculations.
-		.css({width: getWidth(), overflow: settings.scrolling ? 'auto' : 'hidden'})
-		.css({height: getHeight()})// sets the height independently from the width in case the new width influences the value of height.
-		.prependTo($content);
+			.appendTo($loadingBay.show())// content has to be appended to the DOM for accurate size calculations.
+			.css({width: getWidth(), overflow: settings.scrolling ? 'auto' : 'hidden'})
+			.css({height: getHeight()})// sets the height independently from the width in case the new width influences the value of height.
+			.prependTo($content);
 		
 		$loadingBay.hide();
 		
 		// floating the IMG removes the bottom line-height and fixed a problem where IE miscalculates the width of the parent element as 100% of the document width.
 		//$(photo).css({'float': 'none', marginLeft: 'auto', marginRight: 'auto'});
 		
-                $(photo).css({'float': 'none'});
+      $(photo).css({'float': 'none'});
                 
 		// Hides SELECT elements in IE6 because they would otherwise sit on top of the overlay.
 		if (isIE6) {
@@ -604,7 +604,7 @@
 					}
 					
 					if (isIE) {
-                        iframe.frameBorder=0;
+                  iframe.frameBorder=0;
 						iframe.allowTransparency = "true";
 					}
 					
@@ -620,7 +620,7 @@
 						$box[0].style.filter = "";
 					});
 				} else {
-                     $box[0].style.filter = "";
+               $box[0].style.filter = "";
 				}
 				
 				$window.bind('resize.' + prefix, function () {
@@ -724,8 +724,8 @@
 				if ($related[1] && (index < $related.length - 1 || settings.loop)) {
 					photo.style.cursor = 'pointer';
 					photo.onclick = function () {
-                                                publicMethod.next();
-                                        };
+						publicMethod.next();
+				   };
 				}
 				
 				if (isIE) {
@@ -765,7 +765,7 @@
 	// Note: to use this within an iframe use the following format: parent.$.fn.colorbox.close();
 	publicMethod.close = function () {
 		if (open && !closing) {
-			
+
 			closing = true;
 			open = false;
 			trigger(event_cleanup, settings.onCleanup);
