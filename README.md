@@ -15,7 +15,7 @@ Disposem de 3 tipus de plantilles bàsiques
 	* Columna dreta
 
 ------------------------------
-/* https://raw.github.com/travishorn/jquery-headerPersist/master/README.md */
+// https://raw.github.com/travishorn/jquery-headerPersist/master/README.md //
 ## Description
 Locks a header to the top of the page only when user is scrolling within it's parent container.
 
