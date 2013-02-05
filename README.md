@@ -22,13 +22,17 @@ Locks a header to the top of the page only when user is scrolling within it's pa
 Open example.html for example usage.
 
 ## Required HTML
+```html
     <div class="persistMe">
       <h2>Header 1</h2>
       <p>Lorem ipsum dolor sit amet...</p>
     </div>
+```
 
 ## Required JavaScript
+```html
     $('.persistMe').headerPersist();
+```
 
 ## Links
 * [Online Demo](http://jsfiddle.net/6U7zf/)
