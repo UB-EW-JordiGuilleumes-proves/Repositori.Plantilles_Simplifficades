@@ -4,14 +4,15 @@ Prova de repositori Entorns Web
 
 ## Plantilles bàsiques
 Disposem de 3 tipus de plantilles bàsiques 
-* Una columna: Cos de la pàgina.
+* Una columna:
+	* Cos de la pàgina.
 * Dues columnes:
-** Cos de la pàgina
-** Columna menú esquerra
+	* Cos de la pàgina
+	* Columna menú esquerra
 * Tres columnes
-** Cos de la pàgina
-** Columna menú esquerra
-** Columna dreta
+	* Cos de la pàgina
+	* Columna menú esquerra
+	* Columna dreta
 
 ------------------------------
 /* https://raw.github.com/travishorn/jquery-headerPersist/master/README.md */
