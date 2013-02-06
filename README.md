@@ -4,12 +4,12 @@ Prova de repositori Entorns Web
 
 ## Plantilles bàsiques
 Disposem de 3 tipus de plantilles bàsiques 
-* <b>Una columna</b>:
+* <b>Una</b> columna:
 	* Cos de la pàgina.
-* <b>Dues columnes</b>:
+* <b>Dues</b> columnes:
 	* Cos de la pàgina
 	* Columna menú esquerra
-* <b>Tres columnes</b>
+* <b>Tres</b> columnes
 	* Cos de la pàgina
 	* Columna menú esquerra
 	* Columna dreta
